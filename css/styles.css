@@ -9,55 +9,256 @@ body {
     justify-content: center;
 
     height: 100vh;
-    width: 100vw;
+    width: 100vh;
 }
 
-.contenedorGeneral {
+.cuerpoPrincipal {
+
     display: flex;
     align-items: center;
     justify-content: center;
 
-    height: 10em;
+    border-radius: 15px 15px 60px 15px;
+    flex-direction: column;
+
+    height: 42em;
     width: 25em;
 
+    background-color: #11af40;
+
+}
+
+.parteArriba {
+
+    height: 25em;
+    width: 25em;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.pantalla {
+
+    height: 20em;
+    width: 22em;
+
+    background-color: rgb(24, 23, 23);
+
+    border-radius: 10px 10px 40px 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.lcd {
+    height: 16em;
+    width: 16em;
+
+    margin : 0.5em 2em 1em 2em;
+    border-radius: 6px 6px 6px 6px;
+
+    background-color: rgb(62, 147, 161);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.botonera {
+
+    height: 18em;
+    width: 21em;
+
+    flex-direction: row;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.botonesIzq {
+
+    height: 16em;
+    width: 7em;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+
+
+.botonesCentro {
+
+    height: 16em;
+    width: 7em;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    flex-direction: column;
+}
+
+
+
+.botonesDerecha {
+
+    height: 16em;
+    width: 7em;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.cruceta .gridCruceta {
+
+    display: flex;
+
+    height: 2.3em;
+}
+
+.cruceta .gridCruceta .cruz {
+
+    width: 2.3em;
+}
+
+.cruceta .gridCruceta .negra {
     background-color: black;
 }
 
+.cruceta .gridCruceta .negraArriba {
+    background-color: black;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.cruceta .gridCruceta .negraIzq {
+    background-color: black;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.cruceta .gridCruceta .negraDer {
+    background-color: black;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.cruceta .gridCruceta .negraAbajo {
+    background-color: black;
+    border-radius: 0px 0px 5px 5px;
+}
 
 
-.boton {
+.selectStart {
 
-    height: 6em;
-    width: 6em;
-
-    background-color: gold;
-
-    margin : 1em 2em 1em 0em;
-
-    border-radius: 8% 18% 15% 70%;
-    transition: 0.2s;
+    height: 7em;
+    width: 7em;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    flex-direction: column;
+
 }
 
-.boton:hover {
-    background-color: goldenrod;
+.selectStart .botones {
 
-    border-radius: 25%;
-    transition: 0.2s;
+    height: 1.2em;
+    width: 7em;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+
 }
 
-.contenedorGeneral div:first-child:hover{
-/*.contenedorGeneral .boton:first-child:hover{*/
-    background-color: orangered;
+.selectStart .botones .select {
 
-    border-radius: 15%;
+
+    height: 1em;
+    width: 2.5em;
+
+    border-radius: 40px;
+    background-color: black;
+
 }
 
-::selection {
-    color: black;
-    background-color: rgb(255, 255, 0);
+.selectStart .botones .start {
+
+    height: 1em;
+    width: 2.5em;
+    border-radius: 40px;
+
+    background-color: black;
+
 }
+
+
+.botonesAB { 
+    
+    height: 6em;
+    width: 7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    
+}
+
+.botonesAB .zonaBotonA {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 6em;
+    width: 3.5em;
+
+}
+
+.rellenoCentro {
+
+    height: 0.5em;
+    width: 0.5em;
+}
+
+.botonesAB .zonaBotonA .rellenoA {
+
+    height: 2em;
+    width: 3em;
+}
+
+.botonesAB .zonaBotonA .botonA {
+
+    height: 2.7em;
+    width: 2.7em;
+
+    border-radius: 50%;
+    margin-right: 1em;
+    background-color: rgb(0, 0, 0);
+}
+
+.botonB {
+
+    height: 2.7em;
+    width: 2.7em;
+    border-radius: 50%;
+
+    margin: 0em 0em 1em 0em;
+    
+    background-color: rgb(0, 0, 0);
+}
+
